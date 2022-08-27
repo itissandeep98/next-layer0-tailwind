@@ -5,28 +5,28 @@ module.exports = {
   connector: '@layer0/next',
 
   // The name of the site in Layer0 to which this app should be deployed.
-  // name: 'my-site-name',
+  name: 'my-site-name',
 
   // The name of the team in Layer0 to which this app should be deployed.
   // team: 'my-team-name',
 
-  // backends: {
-  //   origin: {
-  //     // The domain name or IP address of the origin server
-  //     domainOrIp: 'example.com',
-  //
-  //     // When provided, the following value will be sent as the host header when connecting to the origin.
-  //     // If omitted, the host header from the browser will be forwarded to the origin.
-  //     hostHeader: 'example.com',
-  //
-  //     // Uncomment the following line if TLS is not set up properly on the origin domain and you want to ignore TLS errors
-  //     // disableCheckCert: true,
-  //
-  //     // Overrides the default ports (80 for http and 443 for https) and instead use a specific port
-  //     // when connecting to the origin
-  //     // port: 1337,
-  //   },
-  // },
+  backends: {
+    origin: {
+      // The domain name or IP address of the origin server
+      domainOrIp: 'example.com',
+
+      // When provided, the following value will be sent as the host header when connecting to the origin.
+      // If omitted, the host header from the browser will be forwarded to the origin.
+      hostHeader: 'example.com',
+
+      // Uncomment the following line if TLS is not set up properly on the origin domain and you want to ignore TLS errors
+      // disableCheckCert: true,
+
+      // Overrides the default ports (80 for http and 443 for https) and instead use a specific port
+      // when connecting to the origin
+      // port: 1337,
+    },
+  },
 
   // Overrides the default path to the routes file. The path should be relative to the root of your app.
   // routes: 'routes.js',

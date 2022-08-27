@@ -3,6 +3,7 @@ import Script from "next/script";
 import React from "react";
 
 const defaultImage = "/fav.png";
+const AppleIcon = "/apple-touch-icon.png";
 
 const Meta = ({ title, keywords, description, url, image, twitter }) => {
 	return (
@@ -20,9 +21,10 @@ const Meta = ({ title, keywords, description, url, image, twitter }) => {
 				<meta name="keywords" content={keywords} />
 				<meta name="description" content={description} />
 
-				<link rel="icon" href="/fav.png" />
-				<link rel="shortcut icon" href="/fav.png" />
-				<link rel="apple-touch-icon" href="/fav.png" />
+			
+				<link rel="icon" href={defaultImage} />
+				<link rel="shortcut icon" href={defaultImage} />
+				<link rel="apple-touch-icon" href={AppleIcon} />
 
 				<meta name="twitter:card" content="summary" />
 				<meta property="twitter:url" content={url} />
