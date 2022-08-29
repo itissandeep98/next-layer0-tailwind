@@ -1,14 +1,14 @@
 // This file was automatically added by layer0 init.
 // You should commit this file to source control.
-const { withLayer0, withServiceWorker } = require('@layer0/next/config')
+const { withLayer0, withServiceWorker } = require('@layer0/next/config');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
-}
+  swcMinify: true
+};
 
-const _preLayer0Export = nextConfig;;
+const _preLayer0Export = nextConfig;
 
 module.exports = (phase, config) =>
   withLayer0(
@@ -19,4 +19,4 @@ module.exports = (phase, config) =>
 
       ..._preLayer0Export
     })
-  )
+  );
